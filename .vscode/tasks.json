@@ -1,0 +1,36 @@
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+// 			"type": "cmake",
+// 			"label": "CMake: configurar",
+// 			"command": "configure",
+// 			"problemMatcher": [],
+// 			"detail": "Tarefa do modelo CMake configurar"
+// 		}
+// 	]
+// }
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar C",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-g3",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
