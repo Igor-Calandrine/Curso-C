@@ -22,19 +22,31 @@ int main () {
    printf("\nBem vindo %s ao jogo!\n", usuario);
    printf("Digite as informações de suas cartas\n");
 
-   printf("Carta 1:\n");
-   printf("Estado:");
+   printf("Carta 1:");
+   printf("\nEstado: ");
    scanf(" %c", &estado1);
 
    printf("Código: %c", estado1);
-   scanf("%s", codigo1);
+   scanf("%s", &codigo1);
 
-   printf("Código: %c", estado1);
+   printf("\nNome da cidade: ");
+   scanf("%s", &cidade1);
+
+   printf("\nPopulação: ");
+   scanf("%i", &populacao1);
+
+   printf("\nÁrea(km²): ");
+   scanf("%f", &area1);
+
+   // printf("Código: %c", estado1);
    
    
-   printf("Carta 1\n");
-   printf("Estado: %c\n", estado1);
-   printf("Código: %c%s", estado1, codigo1);
+   printf("\nCarta 1");
+   printf("\nEstado: %c", estado1);
+   printf("\nCódigo: %c%s", estado1, codigo1);
+   printf("\nNome da cidade: %s", cidade1);
+   printf("\nPopulação: %i", populacao1);
+   printf("\nÁrea(km²): %.2f", area1);
 
 
 
