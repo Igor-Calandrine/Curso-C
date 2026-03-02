@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include <locale.h>
+/*
+-Conversão Explícita
+   Para fazer uma concersão explícita basta colocar o seu tipo antes do número
+   *(int) 3.4444
+   *(float) 5
+*/ 
 
 int main () {
    // setlocale(LC_ALL, "Portuguese_Brazil");
