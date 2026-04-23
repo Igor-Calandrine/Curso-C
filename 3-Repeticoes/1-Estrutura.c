@@ -10,6 +10,9 @@
 
 -for 
    A estrutura é a mesma do JavaScript. A variável deve ser declara detro do for, sendo assim uma variável local
+
+-loops aninhados
+   A mesma estrutura do JavaScript. Recomendado apenas fazer até no máximo 3 níveis, e lembrar de deixar o constante de contagem do lado de fora para ela ser reiniciada na vez seguinte.
 */ 
 
 
@@ -35,6 +38,23 @@ int main () {
    printf("\n\nfor -------");
    for (int i=0; i <= 3; i++) {
       printf("\nfor -> valor = %i", i);
+   }
+
+   //Loops Aninhados
+   printf("\n\nLoops Aninhados\n");
+   int a, b, resultado;
+
+   a = 1;
+   while (a <= 3) {
+      b = 1;
+     
+      while (b <= 3) {
+         resultado = a * b;
+         printf("%i x %i = %i\n", a, b, resultado);
+         b++;
+      }
+      printf("\n");
+      a++;
    }
 
 
